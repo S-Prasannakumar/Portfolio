@@ -1,0 +1,156 @@
+*{
+    font-family: "Roboto Slab", serif;
+}
+.title{
+    text-align:center;
+    margin:40px 0;
+}
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.skill-card{
+    width:300px;
+    padding:30px;
+    border-radius:15px;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+    text-align:center;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+.skill-card i{
+    font-size:60px;
+    color:#000000;
+}
+
+.skill-card h2{
+    margin:20px 0;
+}
+
+.skill-card ul{
+    list-style:none;
+    padding:0;
+}
+
+.skill-card li{
+    padding:10px;
+    margin:8px 0;
+    background:#f5f5f5;
+    border-radius:8px;
+    font-weight:500;
+}
+.skill-card li:hover{
+    background:#b11d1b;
+    color: rgb(255, 255, 255);
+}
+.skill-section{
+    width:100%;
+    padding:50px 0;
+}
+
+.skill-section h1{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.marquee{
+
+    width:100%;
+    overflow:hidden;
+
+    border:2px solid #ddd;
+    border-radius:15px;
+
+        padding:20px 0;
+
+    background:rgb(0, 0, 0);
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.marquee-content{
+
+    display:flex;
+    align-items:center;
+    gap:80px;
+
+    width:max-content;
+
+    animation:scroll 20s linear infinite;
+
+}
+
+.marquee-content i{
+
+    font-size:60px;
+    color:#b11d1b;
+
+    transition:.3s;
+}
+
+.marquee-content i:hover{
+
+    transform:scale(1.2);
+    color:#ff5252;
+
+}
+
+@keyframes scroll{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+    }
+
+}
+
+@media (max-width: 480px){
+
+    .title{
+        font-size:26px;
+    }
+
+    .skill-card{
+        max-width:100%;
+        padding:18px;
+    }
+
+    .skill-card i{
+        font-size:38px;
+    }
+
+    .skill-card h2{
+        font-size:20px;
+    }
+
+    .skill-card li{
+        font-size:14px;
+    }
+
+    .marquee-content{
+        gap:25px;
+    }
+
+    .marquee-content i{
+        font-size:32px;
+    }
+
+    .skill-section h1{
+        font-size:26px;
+    }
+}

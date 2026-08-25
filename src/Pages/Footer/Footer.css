@@ -1,0 +1,33 @@
+footer{
+    margin-top: 50px;
+    padding: 40px;
+    background-color: #1b1a1a;
+}
+footer p{
+    color: rgb(246, 93, 93);
+    margin-left: 550px;
+}
+
+footer p:nth-child(2){
+    margin-left: 600px;
+}
+@media (max-width: 768px) {
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    footer p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+}
